@@ -1,0 +1,24 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "header.scss";
+@import "about.scss";
+@import "agency.scss";
+@import "service.scss";
+@import "contact.scss";
+@import "blog.scss";
+@import "footer.scss";
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  background-color: $teal;
+}
