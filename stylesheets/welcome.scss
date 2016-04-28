@@ -1,41 +1,10 @@
-
-#nav {
-  background-color: $teal;
-  color: $white;
-  font-family: $lato;
-  height: 80px;
-
-  img {
-    position: relative;
-    top: 15px;
-    left: 20px;
-    max-width: 15%;
-  }
-
-  ul {
-    display: inline-block;
-    list-style: none;
-    position: absolute;
-    right: 20px;
-    font-size: 12px;
-  }
-
-  li {
-    display: inline-block;
-    padding: 6px;
-
-    &:hover {
-      background-color: $dark-teal;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: $white;
-  }
-}
-
 #welcome {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 300px;
+
   background-color: $teal;
   color: $white;
   font-family: $lato;

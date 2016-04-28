@@ -2,6 +2,10 @@
   background-color: #547980;
   color: #fff;
   font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 80px; }
   #nav img {
     position: relative;
@@ -24,6 +28,11 @@
     color: #fff; }
 
 #welcome {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 300px;
   background-color: #547980;
   color: #fff;
   font-family: "Lato", sans-serif; }
@@ -57,10 +66,41 @@
       background-color: #335063; }
 
 #page1 {
+  position: absolute;
   left: 0;
   right: 0;
-  padding: 20px;
-  background-color: #335063; }
+  top: 380px;
+  height: 500px;
+  padding: 50px;
+  background-color: #335063;
+  font-family: "Lato", sans-serif; }
+
+h3 {
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid #fff;
+  width: 200px;
+  font-size: 24px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto; }
+
+p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  text-align: center; }
+
+.service {
+  display: inline-block;
+  width: 20vw;
+  margin: 10px 30px;
+  color: white;
+  text-align: center; }
+  @media (max-width: 480px) and (min-width: 320px) {
+    .service {
+      display: block; } }
 
 * {
   -moz-box-sizing: border-box;
