@@ -7,15 +7,34 @@
   .logo {
     padding: 30px 0 30px 0;
     padding-right: 25vw;
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px 0;
+    }
   }
 
   .social {
     padding: 30px 0 30px 30px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   p {
     position: absolute;
     right: 20px;
     bottom: 10px;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 }
