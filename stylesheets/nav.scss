@@ -7,10 +7,14 @@
   font-family: $lato;
 
   img {
-    position: relative;
+    position: absolute;
     top: 15px;
     left: 20px;
     max-width: 15%;
+
+    @include tablet {
+      display: none;
+    }
 
     @include mobile {
       display: none;
@@ -18,13 +22,17 @@
   }
 
   ul {
+    position: absolute;
     display: inline-block;
     list-style: none;
-    position: absolute;
     right: 20px;
     font-size: 12px;
 
     @include mobile {
+      display: none;
+    }
+
+    @include tablet {
       display: none;
     }
   }
@@ -41,5 +49,21 @@
   a {
     text-decoration: none;
     color: $white;
+  }
+
+  .fa-bars {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    padding: 10px;
+
+    &:hover {
+      background-color: $dark-teal;
+    }
+
+    @include desktop {
+      display: none;
+    }
   }
 }

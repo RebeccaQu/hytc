@@ -5,20 +5,26 @@
   color: #fff;
   font-family: "Lato", sans-serif; }
   #nav img {
-    position: relative;
+    position: absolute;
     top: 15px;
     left: 20px;
     max-width: 15%; }
+    @media (max-width: 1024px) and (min-width: 481px) {
+      #nav img {
+        display: none; } }
     @media (max-width: 480px) and (min-width: 320px) {
       #nav img {
         display: none; } }
   #nav ul {
+    position: absolute;
     display: inline-block;
     list-style: none;
-    position: absolute;
     right: 20px;
     font-size: 12px; }
     @media (max-width: 480px) and (min-width: 320px) {
+      #nav ul {
+        display: none; } }
+    @media (max-width: 1024px) and (min-width: 481px) {
       #nav ul {
         display: none; } }
   #nav li {
@@ -29,10 +35,21 @@
   #nav a {
     text-decoration: none;
     color: #fff; }
+  #nav .fa-bars {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    padding: 10px; }
+    #nav .fa-bars:hover {
+      background-color: #335063; }
+    @media (min-width: 1025px) {
+      #nav .fa-bars {
+        display: none; } }
 
 #header {
   top: 80px;
-  height: 300px;
+  height: 350px;
   background-color: #547980;
   color: #fff;
   font-family: "Lato", sans-serif; }
@@ -40,8 +57,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 35%; }
-  #header p {
+    width: 350px; }
+    @media (max-width: 1024px) and (min-width: 481px) {
+      #header img {
+        width: 250px; } }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #header img {
+        width: 200px; } }
+  #header h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,24 +72,31 @@
     text-align: center;
     font-style: italic;
     font-weight: 100;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    font-size: 16px; }
+    @media (max-width: 1024px) and (min-width: 481px) {
+      #header h6 {
+        font-size: 14px; } }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #header h6 {
+        font-size: 12px; } }
   #header a {
     display: block;
-    width: 120px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
-    padding: 10px;
     font-size: 12px;
-    box-shadow: -2px 2px #335063; }
+    box-shadow: -2px 2px #335063;
+    padding: 10px;
+    width: 120px; }
     #header a:hover {
       background-color: #335063; }
 
 #service {
-  top: 380px;
+  top: 430px;
   height: 500px;
   padding: 50px;
   background-color: #335063;
@@ -100,27 +130,27 @@ p {
       display: block; } }
 
 #team {
-  top: 880px;
+  top: 930px;
   height: 500px; }
 
 #expertise {
-  top: 1380px;
+  top: 1430px;
   height: 300px; }
 
 #work {
-  top: 1680px;
+  top: 1730px;
   height: 500px; }
 
 #testimonial {
-  top: 2180px;
+  top: 2230px;
   height: 500px; }
 
 #contact {
-  top: 2680px;
+  top: 2730px;
   height: 500px; }
 
 #footer {
-  top: 3180px;
+  top: 3230px;
   height: 80px; }
 
 * {
