@@ -3,13 +3,19 @@
   height: $contact-height;
   background-color: $dark-teal;
   font-family: $lato;
+  color: $white;
 
-  h3 {
-    color: $white;
-  }
+  .subheading {
+    @include tablet {
+      font-size: 12px;
+      padding: 20px 0;
+    }
 
-  p {
-    color: $white;
+    @include mobile {
+      font-size: 12px;
+      padding-top: 15px;
+      width: 80vw;
+    }
   }
 
   .contact-section {
@@ -22,6 +28,16 @@
   .form-side {
     display: inline-block;
     width: 40vw;
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .message-field {
+    padding: 50px 10px;
   }
 
   input {
@@ -30,21 +46,56 @@
     margin: 20px 0;
     border: none;
     background-color: $darkest-teal;
-    padding: 15px;
+    padding: 15px 10px;
     color: $white;
+
+    @include mobile {
+      padding: 10px
+    }
   }
 
   a {
     text-decoration: none;
     color: $white;
-    border: 3px solid $white;
+    border: 2px solid $white;
     padding: 5px 10px;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  .logo {
+    @include mobile {
+      display: none;
+    }
   }
 
   .info-side {
     display: inline-block;
     width: 40vw;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 30px;
+
+    @include mobile {
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .head-office {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 15px 0;
+  }
+
+  .address {
+    font-size: 14px;
+  }
+
+  .contact {
+    padding: 15px 0;
+    font-size: 14px;
   }
 }

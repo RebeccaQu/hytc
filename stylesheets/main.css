@@ -400,11 +400,17 @@
   top: 3930px;
   height: 500px;
   background-color: #335063;
-  font-family: "Lato", sans-serif; }
-  #contact h3 {
-    color: #fff; }
-  #contact p {
-    color: #fff; }
+  font-family: "Lato", sans-serif;
+  color: #fff; }
+  @media (max-width: 1024px) and (min-width: 481px) {
+    #contact .subheading {
+      font-size: 12px;
+      padding: 20px 0; } }
+  @media (max-width: 480px) and (min-width: 320px) {
+    #contact .subheading {
+      font-size: 12px;
+      padding-top: 15px;
+      width: 80vw; } }
   #contact .contact-section {
     display: block;
     margin-right: auto;
@@ -413,24 +419,53 @@
   #contact .form-side {
     display: inline-block;
     width: 40vw; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #contact .form-side {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
+  #contact .message-field {
+    padding: 50px 10px; }
   #contact input {
     display: block;
     width: 80%;
     margin: 20px 0;
     border: none;
     background-color: #1E2F3B;
-    padding: 15px;
+    padding: 15px 10px;
     color: #fff; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #contact input {
+        padding: 10px; } }
   #contact a {
     text-decoration: none;
     color: #fff;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     padding: 5px 10px; }
+    #contact a:hover {
+      background-color: black; }
+  @media (max-width: 480px) and (min-width: 320px) {
+    #contact .logo {
+      display: none; } }
   #contact .info-side {
     display: inline-block;
     width: 40vw;
     text-align: left;
-    padding-left: 20px; }
+    padding-left: 30px; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #contact .info-side {
+        display: none;
+        margin-left: auto;
+        margin-right: auto; } }
+  #contact .head-office {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 15px 0; }
+  #contact .address {
+    font-size: 14px; }
+  #contact .contact {
+    padding: 15px 0;
+    font-size: 14px; }
 
 #footer {
   top: 4430px;
