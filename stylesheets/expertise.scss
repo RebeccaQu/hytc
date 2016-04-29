@@ -1,13 +1,24 @@
 #expertise {
   top: $nav-height + $header-height + $service-height + $team-height;
   height: $expertise-height;
-
-  h3 {
-    color: $dark-teal;
-  }
+  font-family: $lato;
+  color: $dark-teal;
 
   .underline {
     border-color: $dark-teal;
+  }
+
+  .subheading {
+
+    @include tablet {
+      width: 80vw;
+      font-size: 12px;
+    }
+
+    @include mobile {
+      width: 80vw;
+      font-size: 12px;
+    }
   }
 
   .wheel-multiple {
@@ -15,10 +26,42 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 20px 0;
   }
 
   .wheel {
     display: inline-block;
     width: 20vw;
+    padding: 10px 0;
+
+    img {
+      width: 15vw;
+    }
+  }
+
+  .row {
+    @include desktop {
+      display: inline-block;
+    }
+
+    @include tablet {
+      display: block;
+    }
+
+    @include mobile {
+      display: block;
+
+      .wheel {
+        width: 40vw;
+
+        img {
+          width: 30vw;
+        }
+      }
+    }
+  }
+
+  h6 {
+    font-size: 14px;
   }
 }
