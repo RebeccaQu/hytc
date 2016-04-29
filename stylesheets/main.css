@@ -332,13 +332,17 @@
 #testimonial {
   top: 3330px;
   height: 600px;
-  background-color: #EFEFEF; }
-  #testimonial h3 {
-    color: #335063; }
+  background-color: #EFEFEF;
+  color: #335063;
+  font-family: "Lato", sans-serif; }
   #testimonial .underline {
     border-color: #335063; }
-  #testimonial p {
-    color: #335063; }
+  @media (max-width: 1024px) and (min-width: 481px) {
+    #testimonial .subheading {
+      font-size: 12px; } }
+  @media (max-width: 480px) and (min-width: 320px) {
+    #testimonial .subheading {
+      font-size: 12px; } }
   #testimonial .testimonial-multiple {
     display: block;
     margin-left: auto;
@@ -349,12 +353,48 @@
   #testimonial .testimonial {
     display: inline-block;
     width: 40vw; }
+    @media (max-width: 1024px) and (min-width: 481px) {
+      #testimonial .testimonial {
+        display: block;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #testimonial .testimonial {
+        display: block;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto; } }
     #testimonial .testimonial img {
       display: inline-block;
-      width: 30%; }
+      width: 10vw; }
+      @media (max-width: 1024px) and (min-width: 481px) {
+        #testimonial .testimonial img {
+          display: none; } }
+      @media (max-width: 480px) and (min-width: 320px) {
+        #testimonial .testimonial img {
+          display: none; } }
     #testimonial .testimonial .info {
       display: inline-block;
-      width: 60%; }
+      width: 60%;
+      text-align: left; }
+      #testimonial .testimonial .info .blurb {
+        font-size: 13px;
+        font-weight: 100;
+        margin: 5px 0; }
+        @media (max-width: 480px) and (min-width: 320px) {
+          #testimonial .testimonial .info .blurb {
+            font-size: 12px; } }
+      #testimonial .testimonial .info .client {
+        font-weight: 900;
+        margin: 5px 0; }
+        @media (max-width: 480px) and (min-width: 320px) {
+          #testimonial .testimonial .info .client {
+            font-size: 12px; } }
+      #testimonial .testimonial .info .title {
+        color: #BF4366;
+        margin: 5px 0;
+        font-size: 12px; }
 
 #contact {
   top: 3930px;
