@@ -50,7 +50,7 @@
 
 #header {
   top: 80px;
-  height: 400px;
+  height: 350px;
   background-color: #547980;
   color: #fff;
   font-family: "Lato", sans-serif; }
@@ -98,7 +98,7 @@
       background-color: #335063; }
 
 #service {
-  top: 480px;
+  top: 430px;
   height: 700px;
   background-color: #335063;
   font-family: "Lato", sans-serif; }
@@ -125,7 +125,7 @@
         display: block; } }
 
 #team {
-  top: 1180px;
+  top: 1130px;
   height: 800px;
   background-color: #EFEFEF;
   font-family: "Lato", sans-serif; }
@@ -155,7 +155,7 @@
     color: #BF4366; }
 
 #expertise {
-  top: 1980px;
+  top: 1930px;
   height: 600px; }
   #expertise h3 {
     color: #335063; }
@@ -171,7 +171,7 @@
     width: 20vw; }
 
 #work {
-  top: 2580px;
+  top: 2530px;
   height: 900px;
   background-color: #547980;
   font-family: "Lato", sans-serif; }
@@ -221,7 +221,7 @@
       background-color: #335063; }
 
 #testimonial {
-  top: 3480px;
+  top: 3430px;
   height: 600px;
   background-color: #EFEFEF; }
   #testimonial h3 {
@@ -248,7 +248,7 @@
       width: 60%; }
 
 #contact {
-  top: 4080px;
+  top: 4030px;
   height: 500px;
   background-color: #335063;
   font-family: "Lato", sans-serif; }
@@ -284,7 +284,7 @@
     padding-left: 20px; }
 
 #footer {
-  top: 4580px;
+  top: 4530px;
   height: 100px;
   color: #335063;
   font-family: "Lato", sans-serif; }
