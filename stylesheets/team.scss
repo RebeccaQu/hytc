@@ -12,8 +12,17 @@
     border-color: $dark-teal;
   }
 
-  p {
+  .subheading {
     color: $dark-teal;
+
+    @include tablet {
+      font-size: 12px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      width: 80vw;
+    }
   }
 
   .biography-multiple {
@@ -25,22 +34,62 @@
 
   .biography {
     display: inline-block;
-    width: 20vw;
+    width: 16vw;
+    padding: 15px 20px;
+    vertical-align: top;
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 80vw;
+      padding: 5px 0;
+    }
   }
 
   img {
-    max-width: 18vw;
+    max-width: 16vw;
   }
 
   h6 {
     font-size: 16px;
     font-weight: 900;
     color: $dark-teal;
+    margin: 15px 0;
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  .biography-title {
+    margin: 15px 0;
+
+    @include mobile {
+      margin: 5px 0;
+    }
+  }
+
+  .biography-description {
+    margin: 15px 0;
+    font-size: 14px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .biography-title {
     font-size: 14px;
     font-style: italic;
     color: #BF4366;
+  }
+
+  .biography-social {
+
+    @include mobile {
+      display: none;
+    }
   }
 }
