@@ -1,4 +1,50 @@
 #contact {
   top: $nav-height + $header-height + $service-height + $team-height + $expertise-height + $work-height + $testimonial-height;
   height: $contact-height;
+  background-color: $dark-teal;
+  font-family: $lato;
+
+  h3 {
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .contact-section {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .form-side {
+    display: inline-block;
+    width: 40vw;
+  }
+
+  input {
+    display: block;
+    width: 80%;
+    margin: 20px 0;
+    border: none;
+    background-color: $darkest-teal;
+    padding: 15px;
+    color: $white;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    border: 3px solid $white;
+    padding: 5px 10px;
+  }
+
+  .info-side {
+    display: inline-block;
+    width: 40vw;
+    text-align: left;
+    padding-left: 20px;
+  }
 }

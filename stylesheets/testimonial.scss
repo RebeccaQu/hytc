@@ -1,4 +1,43 @@
 #testimonial {
   top: $nav-height + $header-height + $service-height + $team-height + $expertise-height + $work-height;
   height: $testimonial-height;
+  background-color: $grey;
+
+  h3 {
+    color: $dark-teal;
+  }
+
+  .underline {
+    border-color: $dark-teal;
+  }
+
+  p {
+    color: $dark-teal;
+  }
+
+  .testimonial-multiple {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .testimonial-row {
+    display: block;
+  }
+
+  .testimonial {
+    display: inline-block;
+    width: 40vw;
+
+    img {
+      display: inline-block;
+      width: 30%;
+    }
+
+    .info {
+      display: inline-block;
+      width: 60%;
+    }
+  }
 }
