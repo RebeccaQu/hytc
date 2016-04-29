@@ -3,15 +3,15 @@
 
 @import "nav.scss";
 @import "header.scss";
-
 @import "service.scss";
 @import "team.scss";
 @import "expertise.scss";
 @import "work.scss";
 @import "testimonial.scss";
 @import "contact.scss";
-
 @import "footer.scss";
+
+// BOX-SIZING
 
 * {
   -moz-box-sizing: border-box;
@@ -23,8 +23,42 @@
   box-sizing: inherit;
 }
 
+// RESET ELEMENTS
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, form, label, footer, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+// COMMON ELEMENTS
+
 .container {
   position: absolute;
   left: 0;
   right: 0;
+}
+
+h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: white;
+  width: 200px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.title-underline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  width: 150px;
+  border: 1px solid white;
 }

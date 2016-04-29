@@ -27,6 +27,7 @@
     list-style: none;
     right: 20px;
     font-size: 12px;
+    padding: 20px 0;
 
     @include mobile {
       display: none;

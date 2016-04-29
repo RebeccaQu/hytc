@@ -20,7 +20,8 @@
     display: inline-block;
     list-style: none;
     right: 20px;
-    font-size: 12px; }
+    font-size: 12px;
+    padding: 20px 0; }
     @media (max-width: 480px) and (min-width: 320px) {
       #nav ul {
         display: none; } }
@@ -57,7 +58,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 350px; }
+    width: 300px; }
     @media (max-width: 1024px) and (min-width: 481px) {
       #header img {
         width: 250px; } }
@@ -73,7 +74,8 @@
     font-style: italic;
     font-weight: 100;
     line-height: 1.5em;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 40px 0; }
     @media (max-width: 1024px) and (min-width: 481px) {
       #header h6 {
         font-size: 14px; } }
@@ -101,33 +103,36 @@
   padding: 50px;
   background-color: #335063;
   font-family: "Lato", sans-serif; }
-
-h3 {
-  text-align: center;
-  color: white;
-  border-bottom: 2px solid #fff;
-  width: 200px;
-  font-size: 24px;
-  padding-bottom: 20px;
-  letter-spacing: 2px;
-  margin-left: auto;
-  margin-right: auto; }
-
-p {
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-style: italic;
-  text-align: center; }
-
-.service {
-  display: inline-block;
-  width: 20vw;
-  margin: 10px 30px;
-  color: white;
-  text-align: center; }
-  @media (max-width: 480px) and (min-width: 320px) {
-    .service {
-      display: block; } }
+  #service h3 {
+    text-align: center;
+    color: white;
+    width: 200px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto; }
+  #service p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    text-align: center;
+    width: 50%; }
+  #service .service-multiple {
+    text-align: center; }
+  #service .service-single {
+    display: inline-block;
+    color: white; }
+    #service .service-single h6 {
+      font-size: 16px;
+      letter-spacing: 2px; }
+    #service .service-single p {
+      font-size: 12px; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #service .service-single {
+        display: block; } }
 
 #team {
   top: 930px;
@@ -161,9 +166,35 @@ p {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, form, label, footer, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
 .container {
   position: absolute;
   left: 0;
   right: 0; }
+
+h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: white;
+  width: 200px;
+  font-size: 24px;
+  letter-spacing: 2px; }
+
+.title-underline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 150px;
+  border: 1px solid white; }
 
 /*# sourceMappingURL=main.css.map */
