@@ -1,23 +1,26 @@
 #nav {
+  top: 0;
+  height: 80px;
   background-color: #547980;
   color: #fff;
-  font-family: "Lato", sans-serif;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px; }
+  font-family: "Lato", sans-serif; }
   #nav img {
     position: relative;
     top: 15px;
     left: 20px;
     max-width: 15%; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #nav img {
+        display: none; } }
   #nav ul {
     display: inline-block;
     list-style: none;
     position: absolute;
     right: 20px;
     font-size: 12px; }
+    @media (max-width: 480px) and (min-width: 320px) {
+      #nav ul {
+        display: none; } }
   #nav li {
     display: inline-block;
     padding: 6px; }
@@ -27,21 +30,18 @@
     text-decoration: none;
     color: #fff; }
 
-#welcome {
-  position: absolute;
+#header {
   top: 80px;
-  left: 0;
-  right: 0;
   height: 300px;
   background-color: #547980;
   color: #fff;
   font-family: "Lato", sans-serif; }
-  #welcome img {
+  #header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 35%; }
-  #welcome p {
+  #header p {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -50,7 +50,7 @@
     font-style: italic;
     font-weight: 100;
     line-height: 1.5em; }
-  #welcome a {
+  #header a {
     display: block;
     width: 120px;
     margin-left: auto;
@@ -62,13 +62,10 @@
     padding: 10px;
     font-size: 12px;
     box-shadow: -2px 2px #335063; }
-    #welcome a:hover {
+    #header a:hover {
       background-color: #335063; }
 
-#page1 {
-  position: absolute;
-  left: 0;
-  right: 0;
+#service {
   top: 380px;
   height: 500px;
   padding: 50px;
@@ -102,6 +99,30 @@ p {
     .service {
       display: block; } }
 
+#team {
+  top: 880px;
+  height: 500px; }
+
+#expertise {
+  top: 1380px;
+  height: 300px; }
+
+#work {
+  top: 1680px;
+  height: 500px; }
+
+#testimonial {
+  top: 2180px;
+  height: 500px; }
+
+#contact {
+  top: 2680px;
+  height: 500px; }
+
+#footer {
+  top: 3180px;
+  height: 80px; }
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -110,7 +131,9 @@ p {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-html {
-  background-color: #547980; }
+.container {
+  position: absolute;
+  left: 0;
+  right: 0; }
 
 /*# sourceMappingURL=main.css.map */

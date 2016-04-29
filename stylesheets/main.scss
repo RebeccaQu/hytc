@@ -2,12 +2,15 @@
 @import "mixins.scss";
 
 @import "nav.scss";
-@import "welcome.scss";
-@import "about.scss";
-@import "agency.scss";
+@import "header.scss";
+
 @import "service.scss";
+@import "team.scss";
+@import "expertise.scss";
+@import "work.scss";
+@import "testimonial.scss";
 @import "contact.scss";
-@import "blog.scss";
+
 @import "footer.scss";
 
 * {
@@ -20,6 +23,8 @@
   box-sizing: inherit;
 }
 
-html {
-  background-color: $teal;
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
