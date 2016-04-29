@@ -11,33 +11,68 @@
 
   p {
     color: white;
+    font-size: 14px;
+
+    @include tablet {
+      font-size: 12px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  .subheading {
+    padding: 50px 0;
+
+    @include mobile {
+      padding: 15px 0;
+      width: 80vw;
+    }
   }
 
   .service-multiple {
     text-align: center;
     padding: 30px 0;
 
-    img {
-      margin: 20px;
+    @include mobile {
+      padding: 15px 0;
     }
   }
 
   .service-single {
     display: inline-block;
     color: white;
-    width: 300px;
+    width: 25vw;
+    padding: 0 20px;
+
+    @include tablet {
+      display: inline-block;
+      width: 18vw;
+    }
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      width: 60%;
+    };
+
+    img {
+      @include mobile {
+        width: 30px;
+      }
+    }
 
     h6 {
       font-size: 16px;
       letter-spacing: 2px;
+      padding: 20px 0;
     }
 
     p {
       font-size: 12px;
     }
-
-    @include mobile {
-      display: block;
-    };
   }
 }
