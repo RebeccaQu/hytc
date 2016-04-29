@@ -3,13 +3,12 @@
   height: $work-height;
   background-color: $teal;
   font-family: $lato;
+  color: $white;
 
-  h3 {
-    color: $white;
-  }
-
-  p {
-    color: $white;
+  .subheading {
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   .work-buttons {
@@ -24,7 +23,7 @@
       padding: 5px 10px;
       text-decoration: none;
       color: $white;
-      border: 3px solid $white;
+      border: 2px solid $white;
       font-size: 14px;
     }
   }
@@ -34,6 +33,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin: 50px 0;
+
+    @include mobile {
+      margin: 0;
+    }
 
     p {
       font-size: 12px;
@@ -44,10 +48,26 @@
   .featured-top, .featured-bottom {
     display: inline-block;
     width: 40vw;
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 30px;
+    }
   }
 
   img {
-    width: 20vw;
+    width: 22vw;
+
+    @include tablet {
+      width: 30vw;
+    }
+
+    @include mobile {
+      width: 28vw;
+    }
   }
 
   .load-more {
@@ -64,6 +84,10 @@
     box-shadow: -2px 2px $dark-teal;
     padding: 10px;
     width: 120px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
 
     &:hover {
       background-color: $dark-teal;
